@@ -4,13 +4,18 @@ public class Anagrams {
 
     static boolean isAnagram(String a, String b) {
         // Complete the function
-        String temp;
-        int count=0;
-//        while (){
-//            if
-//
-//        }
-        return false;
+       a=a.toLowerCase();
+       b=b.toLowerCase();
+
+       if(a.length()!= b.length()) {
+           return  false;
+       }
+        for (int i = 0; i < b.length(); i++) {
+            a=a.replaceFirst(String.valueOf(b.charAt(i)),"");
+        }
+
+    return a.isEmpty()? true: false;
+
     }
 
     public static void main(String[] args) {

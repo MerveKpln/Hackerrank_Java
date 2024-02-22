@@ -4,8 +4,8 @@ import java.io.*;
 public class FirstReverse {
     public static String FirstReverse(String str) {
         // code goes here
-       //str = String.valueOf(new StringBuffer(str).reverse());
-       str.split(" ").rever
+       str = String.valueOf(new StringBuffer(str).reverse());
+
         return str;
     }
 
